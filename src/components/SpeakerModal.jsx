@@ -3,7 +3,7 @@ import { useGLTF, useAnimations } from '@react-three/drei';
 
 export default function SpeakerModal({ position = [0, 0, 0], scale = [1, 1, 1], ...props }) {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF('..//public/speaker.glb');
+  const { nodes, materials, animations } = useGLTF('/speaker.gltf'); // Correct path
   const { actions } = useAnimations(animations, group);
 
   return (
@@ -27,7 +27,4 @@ export default function SpeakerModal({ position = [0, 0, 0], scale = [1, 1, 1], 
   );
 }
 
-useGLTF.preload('/speaker.glb');
-
-
-useGLTF.preload('..//public/speaker.glb')
+useGLTF.preload('/speaker.gltf'); // Correct path
