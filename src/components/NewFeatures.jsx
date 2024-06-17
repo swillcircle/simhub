@@ -11,7 +11,7 @@ const NewFeatures = () => {
       <div className='container mx-auto py-24'>
       <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-2'>
         <div className='max-w-sm py-12'>
-          <p className='text-center sm:text-left text-base sm:text-2xl sm:sm:tracking-wide font-bold text-white pb-6'>
+          <p className='text-center sm:text-left text-base sm:text-2xl sm:sm:tracking-wide font-base text-white pb-6'>
           Bass Shakers
           </p>
           <div className='mx-auto sm:mx-0 mb-6 text-center sm:text-left w-[60px] h-[4px] bg-teal-500 '></div>
@@ -20,7 +20,7 @@ const NewFeatures = () => {
             </p>
         </div>
         <div className='max-w-sm py-12 sm:ml-auto'>
-          <p className='text-center sm:text-left text-base sm:text-2xl sm:sm:tracking-wide font-bold text-white pb-6'>
+          <p className='text-center sm:text-left text-base sm:text-2xl sm:sm:tracking-wide font-base text-white pb-6'>
           Dashboards
           </p>
           <div className='mx-auto sm:mx-0 mb-6 text-center sm:text-left w-[60px] h-[4px] bg-teal-500 '></div>
@@ -29,7 +29,7 @@ const NewFeatures = () => {
            </p>
         </div>
         <div className='max-w-sm py-12'>
-          <p className='text-center sm:text-left text-base sm:text-2xl sm:sm:tracking-wide font-bold text-white pb-6'>
+          <p className='text-center sm:text-left text-base sm:text-2xl sm:sm:tracking-wide font-base text-white pb-6'>
           Wind Simulator
           </p>
           <div className='mx-auto sm:mx-0 mb-6 text-center sm:text-left w-[60px] h-[4px] bg-teal-500 '></div>
@@ -37,7 +37,7 @@ const NewFeatures = () => {
           Feel the wind that a Formula 1 driver has            </p>
         </div>
         <div className='max-w-sm py-12 sm:ml-auto'>
-          <p className='text-center sm:text-left text-base sm:text-2xl sm:sm:tracking-wide font-bold text-white pb-6'>
+          <p className='text-center sm:text-left text-base sm:text-2xl sm:sm:tracking-wide font-base text-white pb-6'>
           Button Boxes
           </p>
           <div className='mx-auto sm:mx-0 mb-6 text-center sm:text-left w-[60px] h-[4px] bg-teal-500 '></div>

@@ -16,7 +16,7 @@ const Hero = () => {
             </button>
           </div>
           <div className='right-container relative w-1/2 h-full contents z-10'>
-            <div className='absolute inset-0 translate-x-[40%] hidden sm:block'>
+            <div className='absolute inset-0 translate-x-[20%] translate-y-[30%] sm:translate-x-[40%] sm:translate-y-[0%] h-[480px] sm:h-auto'>
               <Canvas>
                 <OrbitControls enableZoom={false} autoRotate />
                 <ambientLight intensity={1} />
@@ -26,7 +26,7 @@ const Hero = () => {
                 </Sphere>
               </Canvas>
             </div>
-            <div className='absolute inset-0 flex items-center justify-end'>
+            <div className='absolute inset-0 flex items-center justify-end w-52 sm:w-auto'>
               <img src="controller-gr.png" alt="controller" className='animate-[float_3s_ease-in-out_infinite]' /> 
             </div>
           </div>
