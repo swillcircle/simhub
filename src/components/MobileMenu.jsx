@@ -4,8 +4,9 @@ const MobileMenu = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const menuRef = useRef(null);
 
-    const toggleMenu = () => {
-        setMenuOpen(!menuOpen);
+    const toggleMenu = (event) => {
+        event.stopPropagation(); // Prevent the click from bubbling up
+        setMenuOpen(prevState => !prevState);
     };
 
     const handleClickOutside = (event) => {
@@ -15,35 +16,28 @@ const MobileMenu = () => {
     };
 
     useEffect(() => {
-        if (menuOpen) {
-            document.addEventListener('mousedown', handleClickOutside);
-        } else {
-            document.removeEventListener('mousedown', handleClickOutside);
-        }
-
+        document.addEventListener('click', handleClickOutside);
         return () => {
-            document.removeEventListener('mousedown', handleClickOutside);
+            document.removeEventListener('click', handleClickOutside);
         };
-    }, [menuOpen]);
+    }, []);
 
     return (
-        <header className='md:hidden'>
-            <button className="menu-button text-white border-none cursor-pointer text-3xl" onClick={toggleMenu}>
-                ☰
-            </button>
-            <nav ref={menuRef} className={`menu ${menuOpen ? 'open' : ''} flex-col bg-white absolute top-[60px] right-0 text-teal-500 text-left z-20`}>
-                <a className='py-4 px-12 hover:bg-teal-800 active:bg-teal-800 focus:outline-none focus:ring focus:ring-teal-800' href="#home">Downloads</a>
-                <a className='py-4 px-12 hover:bg-teal-800 active:bg-teal-800 focus:outline-none focus:ring focus:ring-teal-800' href="#about">Get a license</a>
-                <a className='py-4 px-12 hover:bg-teal-800 active:bg-teal-800 focus:outline-none focus:ring focus:ring-teal-800' href="#services">Resources</a>
-                <a className='py-4 px-12 hover:bg-teal-800 active:bg-teal-800 focus:outline-none focus:ring focus:ring-teal-800' href="#services">Help and Community</a>
-                <a className='py-4 px-12 hover:bg-teal-800 active:bg-teal-800 focus:outline-none focus:ring focus:ring-teal-800' href="#contact">Contact</a>
-            </nav>
-            <style jsx>{`
-                .menu {
-                    display: ${menuOpen ? 'flex' : 'none'};
-                }
-            `}</style>
-        </header>
+        <nav role="navigation" className="relative md:hidden">
+            <div id="menuToggle" className={`relative z-10 ${menuOpen ? 'open' : ''}`} ref={menuRef}>
+                <input type="checkbox" onChange={toggleMenu} checked={menuOpen} />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu" className={`absolute ${menuOpen ? 'open' : ''}`}>
+                    <a href="#home" className='text-black hover:text-teal-500'><li>Downloads</li></a>
+                    <a href="#about" className='text-black hover:text-teal-500'><li>Get a license</li></a>
+                    <a href="#services" className='text-black hover:text-teal-500'><li>Resources</li></a>
+                    <a href="#community" className='text-black hover:text-teal-500'><li>Help and Community</li></a>
+                    <a href="#contact" className='text-black hover:text-teal-500'><li>Contact</li></a>
+                </ul>
+            </div>
+        </nav>
     );
 };
 
