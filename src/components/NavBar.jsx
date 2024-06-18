@@ -12,7 +12,7 @@ const NavBar = () => {
             <div className='mr-auto'>
                 <img src="./logo.svg" alt="SimHub Logo"  className='h-8 sm:h-12'/>
             </div>
-            <ul className='hidden md:flex justify-between'>
+            <ul className='hidden lg:flex justify-between'>
                 <li className='px-5 text-white hover:text-teal-100 cursor-pointer'>
                 About SimHub
                 </li>

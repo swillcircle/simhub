@@ -23,7 +23,7 @@ const MobileMenu = () => {
     }, []);
 
     return (
-        <nav role="navigation" className="relative md:hidden">
+        <nav role="navigation" className="relative lg:hidden">
             <div id="menuToggle" className={`relative z-10 ${menuOpen ? 'open' : ''}`} ref={menuRef}>
                 <input type="checkbox" onChange={toggleMenu} checked={menuOpen} />
                 <span></span>

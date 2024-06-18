@@ -26,7 +26,7 @@ const Hero = () => {
                 </Sphere>
               </Canvas>
             </div>
-            <div className='absolute inset-0 flex items-center justify-end w-52 sm:w-auto'>
+            <div className='absolute left-[30%] sm:left-0 inset-0 flex items-center justify-end w-52 sm:w-auto'>
               <img src="controller-gr.png" alt="controller" className='animate-[float_3s_ease-in-out_infinite]' /> 
             </div>
           </div>
