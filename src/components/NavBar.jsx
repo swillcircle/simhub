@@ -42,7 +42,7 @@ const NavBar = () => {
                 </li>
             </ul>
         </div>
-        <div>
+        <div className='z-[100]'>
             <MobileMenu />
         </div>
     </div>

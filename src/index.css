@@ -70,11 +70,8 @@
   }
   
   #menu {
-    position: absolute;
-    width: 300px;
     margin: -50px 0 0 -240px;
     padding: 50px;
-    background: #ededed;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;

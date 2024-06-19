@@ -29,7 +29,7 @@ const MobileMenu = () => {
                 <span></span>
                 <span></span>
                 <span></span>
-                <ul id="menu" className={`absolute ${menuOpen ? 'open' : ''}`}>
+                <ul id="menu" className={`absolute shadow-2xl bg-white w-[300px] ${menuOpen ? 'open' : ''}`}>
                     <a href="#home" className='text-black hover:text-teal-500'><li>Downloads</li></a>
                     <a href="#about" className='text-black hover:text-teal-500'><li>Get a license</li></a>
                     <a href="#services" className='text-black hover:text-teal-500'><li>Resources</li></a>
