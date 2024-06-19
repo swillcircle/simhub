@@ -23,6 +23,9 @@ export default {
         float: 'float 2s infinite ease-in-out',
         translateDown: 'translateDown 0.3s ease-in-out forwards',
       },
+      brightness: {
+        25: '.25',
+      }
     },
   },
   plugins: [],
