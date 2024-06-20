@@ -25,7 +25,10 @@ export default {
       },
       brightness: {
         25: '.25',
-      }
+      },
+      opacity: {
+        '95': '.95',
+      },
     },
   },
   plugins: [],

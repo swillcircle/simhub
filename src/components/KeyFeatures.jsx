@@ -4,7 +4,7 @@ const KeyFeatures = () => {
   return (
     <section className='max-w-6xl mx-auto'>
       <div className='flex flex-col  justify-center items-center pb-48'>
-        <h3 className='text-3xl font-bold text-white text-center pb-6'>
+        <h3 className='text-5xl font-bold text-white text-center pb-6'>
         Just Added <br className='block sm:hidden' /><i className='text-teal-100'>new</i> MOTION Feature
         </h3>
         <div className='mx-auto sm:mx-0 mb-6 text-center sm:text-left w-[60px] h-[4px] bg-teal-500 '></div>
@@ -13,7 +13,7 @@ const KeyFeatures = () => {
           </p>
       </div>
       <div className='flex justify-center items-center'>
-        <h3 className='text-3xl font-bold text-white'>
+        <h3 className='text-5xl font-bold text-white'>
           Key Features
         </h3>
       </div>

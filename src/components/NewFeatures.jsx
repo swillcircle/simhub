@@ -4,7 +4,7 @@ const NewFeatures = () => {
   return (
     <section className='max-w-6xl mx-auto'>
       <div className='flex justify-center items-center'>
-        <h3 className='text-center sm:text-left text-3xl font-bold text-white'>
+        <h3 className='text-center sm:text-left text-5xl font-bold text-white'>
         New additions to SimHub
         </h3>
       </div>

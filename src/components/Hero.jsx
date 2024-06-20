@@ -8,8 +8,8 @@ const Hero = () => {
     <section className='max-w-6xl mx-auto'>
         <div className='relative  py-64 flex flex-row'>
           <div className='left-container relative w-full z-50'>
-            <h1 className='text-4xl sm:text-7xl md:text-8xl font-bold text-white pb-6'>External hardware to your simulator.</h1>
-            <h2 className='text-sm sm:text-2xl sm:tracking-wide font-reg text-teal-100 pb-6'>SimHub is a modular multi sim dashboard and tactile feedback software. You can construct your very own simulator!</h2>
+            <h1 className='text-5xl sm:text-7xl md:text-8xl font-bold text-white pb-6'>External hardware to your simulator.</h1>
+            <h2 className='text-2xl sm:tracking-wide font-reg text-teal-100 pb-6'>SimHub is a modular multi sim dashboard and tactile feedback software. You can construct your very own simulator!</h2>
             <button className='flex text-xl font-bold text-white px-12 py-4 bg-teal-500 hover:bg-teal-400 ease-in-out duration-300 rounded-lg shadow-md shadow-teal-500/50'>
               <a href="https://www.simhubdash.com/download-2/">Download Now</a>
               <span className='pl-2'><img src="./download.svg" alt="download" /></span>

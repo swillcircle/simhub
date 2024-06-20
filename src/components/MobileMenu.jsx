@@ -29,11 +29,12 @@ const MobileMenu = () => {
                 <span></span>
                 <span></span>
                 <span></span>
-                <ul id="menu" className={`absolute shadow-2xl bg-white w-[300px] ${menuOpen ? 'open' : ''}`}>
-                    <a href="#home" className='text-black hover:text-teal-500'><li>Downloads</li></a>
-                    <a href="#about" className='text-black hover:text-teal-500'><li>Get a license</li></a>
-                    <a href="#services" className='text-black hover:text-teal-500'><li>Resources</li></a>
-                    <a href="#community" className='text-black hover:text-teal-500'><li>Help and Community</li></a>
+                <ul id="menu" className={`absolute shadow-2xl bg-white/95 w-[110vw] border-2 border-teal-700 rounded-lg ${menuOpen ? 'open' : ''}`}>
+                    <a href="#about" className='text-black hover:text-teal-500'><li>About SimHub</li></a>
+                    <a href="#download" className='text-black hover:text-teal-500'><li>Download</li></a>
+                    <a href="#license" className='text-black hover:text-teal-500'><li>Get a license</li></a>
+                    <a href="#resources" className='text-black hover:text-teal-500'><li>Motion</li></a>
+                    <a href="#help" className='text-black hover:text-teal-500'><li>Help</li></a>
                     <a href="#contact" className='text-black hover:text-teal-500'><li>Contact</li></a>
                 </ul>
             </div>
