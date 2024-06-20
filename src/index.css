@@ -8,6 +8,7 @@
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   #menuToggle a {
@@ -84,4 +85,22 @@
   #menu li {
     padding: 10px 0;
     font-size: 22px;
+  }
+
+  .sticky-nav {
+    position: fixed;
+    top: 1rem;
+    left: 92%;
+    width: 100%;
+    background-color: #11A8AD;
+    border-radius: 50px;
+    padding: 24px;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+  
+  @media screen and (max-width: 430px) {
+    .sticky-nav {
+      left: 80%;
+    }
   }

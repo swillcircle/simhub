@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 
 const MobileMenu = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [isSticky, setIsSticky] = useState(false);
     const menuRef = useRef(null);
 
     const toggleMenu = (event) => {
@@ -15,15 +16,25 @@ const MobileMenu = () => {
         }
     };
 
+    const handleScroll = () => {
+        if (window.scrollY > 50) { // Adjust this value based on when you want to make it sticky
+            setIsSticky(true);
+        } else {
+            setIsSticky(false);
+        }
+    };
+
     useEffect(() => {
         document.addEventListener('click', handleClickOutside);
+        window.addEventListener('scroll', handleScroll);
         return () => {
             document.removeEventListener('click', handleClickOutside);
+            window.removeEventListener('scroll', handleScroll);
         };
     }, []);
 
     return (
-        <nav role="navigation" className="relative lg:hidden">
+        <nav role="navigation" className={`relative lg:hidden ${isSticky ? 'sticky-nav' : ''}`}>
             <div id="menuToggle" className={`relative z-10 ${menuOpen ? 'open' : ''}`} ref={menuRef}>
                 <input type="checkbox" onChange={toggleMenu} checked={menuOpen} />
                 <span></span>
